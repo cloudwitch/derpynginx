@@ -1,7 +1,6 @@
-FROM nginx: alpine
+FROM nginx:alpine
 
-#COPY nginx.conf /etc/nginx/nginx.conf
-#COPY nginx.vh.default.conf /etc/nginx/conf.d/default.conf
+COPY files /usr/share/nginx/html
 
 EXPOSE 80
 
